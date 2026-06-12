@@ -1,0 +1,7 @@
+service:
+  name: test remote 1 3_0
+  identifier: test_remote_1_3_0
+  tags: {}
+  serviceDefinition:
+    type: Kubernetes
+    spec: {}
