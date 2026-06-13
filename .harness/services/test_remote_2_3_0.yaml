@@ -6,4 +6,42 @@ service:
   serviceDefinition:
     type: Kubernetes
     spec:
-      artifacts: {}
+      artifacts:
+        primary:
+          sources:
+            - type: DockerRegistry
+              identifier: kjbnk
+              spec:
+                connectorRef: <+input>
+                imagePath: /khb
+                tag: <+input>
+          primaryArtifactRef: <+input>
+        sidecars:
+          - sidecar:
+              type: Ecr
+              identifier: jnkljn
+              spec:
+                connectorRef: <+input>
+                region: me-central-1
+                registryId: jknjk
+                imagePath: <+input>
+                tag: <+input>
+                digest: <+input>
+      manifests:
+        - manifest:
+            identifier: service_kubernetes_221f
+            spec:
+              store:
+                spec:
+                  repoName: <+input>
+                  gitFetchType: Branch
+                  branch: hkb
+                  paths:
+                    - /kjbkjn
+                    - /kjbkj
+                type: HarnessCode
+              valuesPaths: []
+              optionalValuesYaml: true
+              enableDeclarativeRollback: true
+              skipResourceVersioning: false
+            type: K8sManifest
