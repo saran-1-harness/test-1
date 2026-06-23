@@ -1,8 +1,13 @@
 environment:
   name: environment_env_39c9
   identifier: environment_env_39c9
-  description: ""
-  tags: {}
+  description: Sample description - main branch
+  tags:
+    a: ""
+    b: ""
+    c: ""
+    d: ""
+    e: ""
   type: PreProduction
   orgIdentifier: Saran_Org
   projectIdentifier: _0_test
