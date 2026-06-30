@@ -1,0 +1,8 @@
+environment:
+  name: environment_env_e933
+  identifier: environment_env_e933
+  description: ""
+  tags: {}
+  type: PreProduction
+  orgIdentifier: default
+  projectIdentifier: project_kk_do_not_delete
