@@ -4,5 +4,21 @@ service:
   orgIdentifier: Saran_Org
   projectIdentifier: Saran_Test
   serviceDefinition:
-    spec: {}
+    spec:
+      manifests:
+        - manifest:
+            identifier: kjn
+            type: K8sManifest
+            spec:
+              store:
+                type: Github
+                spec:
+                  connectorRef: <+input>
+                  gitFetchType: Branch
+                  paths:
+                    - /asd
+                  repoName: sd
+                  branch: asd
+              skipResourceVersioning: false
+              enableDeclarativeRollback: false
     type: Kubernetes
