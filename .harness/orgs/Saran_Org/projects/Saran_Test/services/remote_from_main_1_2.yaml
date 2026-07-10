@@ -1,0 +1,5 @@
+service:
+  name: remote from main 1- 2
+  identifier: remote_from_main_1_2
+  orgIdentifier: Saran_Org
+  projectIdentifier: Saran_Test
