@@ -1,0 +1,12 @@
+infrastructureDefinition:
+  name: infrastructure_kubernetes_74c1 remote
+  identifier: infrastructure_kubernetes_74c1_remote
+  tags: {}
+  type: KubernetesDirect
+  deploymentType: Kubernetes
+  spec:
+    connectorRef: <+input>
+    namespace: asd
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+  allowSimultaneousDeployments: false
+  environmentRef: env_2
